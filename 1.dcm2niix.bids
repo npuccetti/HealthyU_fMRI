@@ -1,0 +1,19 @@
+!/bin/sh
+BaseDir=/deep/heller/work/Healthyu
+toplvl=/deep/heller/work/Healthyu
+dcmdir=/deep/heller/work/Healthyu/raw
+niidir=${toplvl}/bids
+
+cd ${BaseDir}
+for i in $( ls -d AHEL_HU_????_???????? ); do
+	sub=`echo ${i} | awk -F/ '{ print $1 }'`
+
+	echo ${sub}
+
+	cd ${BaseDir}/${sub}
+
+	for k in $( ls -d mr_* ); do
+		dcm2niix -b y -o ${niidir}/sub-${subj} -f ${subj}_%f_%p ${k}
+done
+
+done
