@@ -1,6 +1,6 @@
 # HealthyU_fMRI
 
-## This respository is to document and share then work that is done on the HealthyU Worry and Rumination fMRI project. As needed, more information can be given in this README. The primary purpose is to index each of the scripts with a brief summary of their purpose. The scripts are numbered by the order in which they were executed. A corollary set of scripts involving the behavioral responses from the scan as well as the Worry and Rumination survey will be included and tagged as "behave_#.scriptname"
+This respository is to document and share the work that is done on the HealthyU Worry and Rumination fMRI project. The primary purpose of the README is to index each of the scripts with a brief summary of their purpose. The scripts are numbered by the order in which they were executed. A corollary set of scripts involving the behavioral responses from the scan as well as the Worry and Rumination survey will be included and tagged as "behave_#.scriptname". More information can/will be added to the README as needed.
 
 ## Script index 
 
