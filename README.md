@@ -3,10 +3,10 @@
 
 0.tarUnzip.sh -unzips all of the tar files 
 
-1.dcm2nii.sh -see description below 
-1.dcm2niix.bids -two versions of dcm to nifti converters, currently not needed as its built into the 3.BIDSreorg script
+~~1.dcm2nii.sh -see description below 
+1.dcm2niix.bids -two versions of dcm to nifti converters, currently not needed as its built into the 3.BIDSreorg script~~
 
-2.makeDir.mvNii.sh -moves the converted niftis to the folder for bids, currently not needed as its built into 3.BIDSreorg
+~~2.makeDir.mvNii.sh -moves the converted niftis to the folder for bids, currently not needed as its built into 3.BIDSreorg~~
 
 3.BIDSreorg.sh -replaces scripts 1 & 2 and converts the dcms to nii with .json sidecars. Also renames and creates org structure necesary for BIDS (last updated 5.26.20) 
 
@@ -22,6 +22,6 @@
 
 9.1DprepTcatSmoothing.sh -this is a sort of hodge-podge of commands to get 1) the derivatives motion files, 2) the first 15 TRs chopped off of the BOLD runs and, 3) some smoothing for the GLM which is NOT done in fmriprep
 
-10.3dDeconvolve.sh -a script for our basic GLM on one subject; more for demonstration purposes as the scripts is incomplete/differs from the final GLM that we run on everyone; AKA this is DECOMISSIONED and should not be used
+~~10.3dDeconvolve.sh -a script for our basic GLM on one subject; more for demonstration purposes as the scripts is incomplete/differs from the final GLM that we run on everyone; AKA this is DECOMISSIONED and should not be used~~
 
 10.5.batchGLM73120.sh -a subject loop throught the complete GLM (mask, motion, and contrasts are updated/confirmed; 9 conditions W/R/N and feeling and intensity ratings for each.
