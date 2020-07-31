@@ -47,14 +47,14 @@ for i in $( ls -d sub-5??? ); do
       -infile ${subject}_motion.1D \
       -set_nruns 5 \
       -derivative \
-      -overwrite
+      -overwrite \
       -write ${subject}_motion_deriv.1D
 
       1d_tool.py \
       -infile ${subject}_motion_sqrd.1D \
       -set_nruns 5 \
       -derivative \
-      -overwrite
+      -overwrite \
       -write ${subject}_motion_deriv_sqrd.1D
 
 done #close subject loop
