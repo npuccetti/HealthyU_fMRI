@@ -14,6 +14,9 @@ for i in $( ls -d sub-5??? ); do
  mkdir GLM_73120
  cd GLM_73120
 
+if [ ! -f GLM73120_func* ]; then
+  echo "${subject}'s GLM not yet complete...starting now!"
+
  3dDeconvolve -input ${BaseDir}/${subject}/func/${subject}_task-wrg_run-*_MNI_preproc_tcat_smooth.nii  \
  -polort 2    \
  -mask ${BaseDir}/${subject}/func/${subject}_task-w*_run-1_space-MNI152NLin2009cAsym_desc-brain_mask.nii.gz \
@@ -63,5 +66,6 @@ for i in $( ls -d sub-5??? ); do
  -fitts GLM73120_fitts -bucket GLM73120_func                             \
  -jobs 4
 
+fi
 
 done #close the subject loop
